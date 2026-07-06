@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_homepage_contact_sections",
+  "info": {
+    "displayName": "Contact Section",
+    "description": "Homepage contact section copy. NOTE: exact cta/map label field names were not given in spec (only described as 'cta labels' / 'map labels') — named here as a reasonable default, rename freely once frontend field names are confirmed."
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "primaryCtaLabel": {
+      "type": "string"
+    },
+    "secondaryCtaLabel": {
+      "type": "string"
+    },
+    "mapMarkerLabel": {
+      "type": "string"
+    },
+    "mapDirectionsLabel": {
+      "type": "string"
+    }
+  }
+}

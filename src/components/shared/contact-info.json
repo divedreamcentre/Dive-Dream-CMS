@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_contact_infos",
+  "info": {
+    "displayName": "Contact Info",
+    "description": "Reusable contact details block"
+  },
+  "options": {},
+  "attributes": {
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "text"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "operatingHours": {
+      "type": "string"
+    }
+  }
+}

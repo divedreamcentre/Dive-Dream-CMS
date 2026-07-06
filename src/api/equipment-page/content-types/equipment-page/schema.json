@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "equipment_pages",
+  "info": {
+    "singularName": "equipment-page",
+    "pluralName": "equipment-pages",
+    "displayName": "Equipment Page",
+    "description": "Thin page shell; equipment content comes from the EquipmentCategory collection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

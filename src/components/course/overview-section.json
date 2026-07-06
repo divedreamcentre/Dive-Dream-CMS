@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_course_overview_sections",
+  "info": {
+    "displayName": "Overview Section",
+    "description": "shared.section-heading plus an extra long-form description field"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

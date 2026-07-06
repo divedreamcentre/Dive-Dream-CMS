@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_section_headings",
+  "info": {
+    "displayName": "Section Heading",
+    "description": "eyebrow + title + description pattern reused across page sections"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

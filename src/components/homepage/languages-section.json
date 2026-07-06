@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_homepage_languages_sections",
+  "info": {
+    "displayName": "Languages Section",
+    "description": "Homepage section listing spoken languages"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "languages": {
+      "type": "component",
+      "component": "homepage.language-item",
+      "repeatable": true
+    }
+  }
+}

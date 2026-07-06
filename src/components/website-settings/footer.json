@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_website_settings_footers",
+  "info": {
+    "displayName": "Footer",
+    "description": "Site-wide footer content"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "badges": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "columns": {
+      "type": "component",
+      "component": "website-settings.footer-column",
+      "repeatable": true
+    },
+    "legalLinks": {
+      "type": "component",
+      "component": "shared.nav-link",
+      "repeatable": true
+    },
+    "copyrightText": {
+      "type": "string"
+    }
+  }
+}

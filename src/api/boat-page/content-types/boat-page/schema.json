@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "boat_pages",
+  "info": {
+    "singularName": "boat-page",
+    "pluralName": "boat-pages",
+    "displayName": "Boat Page",
+    "description": "Single hardcoded vessel today; boat content fields are embedded directly here rather than in a separate collection type. Revisit as a BoatTrip collection if a second vessel is ever added (requires a frontend change to render a list/detail view)."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "boatName": {
+      "type": "string"
+    },
+    "boatDescription": {
+      "type": "blocks"
+    },
+    "boatImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "boatSpecs": {
+      "type": "component",
+      "component": "shared.key-value",
+      "repeatable": true
+    },
+    "boatFeatureCards": {
+      "type": "component",
+      "component": "shared.highlight-card",
+      "repeatable": true
+    },
+    "boatPrice": {
+      "type": "component",
+      "component": "shared.pricing",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

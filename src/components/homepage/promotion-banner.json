@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_homepage_promotion_banners",
+  "info": {
+    "displayName": "Promotion Banner",
+    "description": "Homepage banner surfacing a single featured Promotion"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "promotion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::promotion.promotion"
+    },
+    "ctaLabel": {
+      "type": "string"
+    }
+  }
+}

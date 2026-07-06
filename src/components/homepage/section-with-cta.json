@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_homepage_section_with_ctas",
+  "info": {
+    "displayName": "Section With CTA",
+    "description": "shared.section-heading + ctaLabel; reused for packages/courses/promotions/services/testimonials/gallery sections"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "ctaLabel": {
+      "type": "string"
+    }
+  }
+}

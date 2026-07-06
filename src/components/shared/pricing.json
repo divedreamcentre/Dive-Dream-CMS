@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_pricings",
+  "info": {
+    "displayName": "Pricing",
+    "description": "Structured replacement for hand-formatted price strings"
+  },
+  "options": {},
+  "attributes": {
+    "amount": {
+      "type": "decimal",
+      "required": true
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": ["USD", "EUR", "GBP"],
+      "default": "USD"
+    },
+    "unitLabel": {
+      "type": "string"
+    }
+  }
+}

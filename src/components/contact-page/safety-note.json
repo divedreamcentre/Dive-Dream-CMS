@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_contact_page_safety_notes",
+  "info": {
+    "displayName": "Safety Note",
+    "description": "Contact page safety callout"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

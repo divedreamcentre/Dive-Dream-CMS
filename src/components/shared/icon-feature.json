@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_icon_features",
+  "info": {
+    "displayName": "Icon Feature",
+    "description": "icon + title + description; consolidates Homepage trustStats and quickFeatures which share this exact shape"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

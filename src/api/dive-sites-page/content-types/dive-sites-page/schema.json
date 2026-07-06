@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "dive_sites_pages",
+  "info": {
+    "singularName": "dive-sites-page",
+    "pluralName": "dive-sites-pages",
+    "displayName": "Dive Sites Page",
+    "description": "Thin page shell; dive site content comes from the DiveSite collection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

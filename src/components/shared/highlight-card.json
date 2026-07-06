@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_highlight_cards",
+  "info": {
+    "displayName": "Highlight Card",
+    "description": "Icon + title + text card, optionally with a bullet list of notes"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string",
+      "required": true
+    },
+    "notes": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    }
+  }
+}

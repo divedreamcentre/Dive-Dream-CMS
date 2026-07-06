@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "dive_center_pages",
+  "info": {
+    "singularName": "dive-center-page",
+    "pluralName": "dive-center-pages",
+    "displayName": "Dive Center Page",
+    "description": "Thin page shell"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

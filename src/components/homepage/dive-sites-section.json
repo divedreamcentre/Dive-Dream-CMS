@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_homepage_dive_sites_sections",
+  "info": {
+    "displayName": "Dive Sites Section",
+    "description": "Homepage featured dive sites section header; entries come from DiveSite.isFeatured"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "ctaLabel": {
+      "type": "string"
+    }
+  }
+}

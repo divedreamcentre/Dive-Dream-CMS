@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "promotions_pages",
+  "info": {
+    "singularName": "promotions-page",
+    "pluralName": "promotions-pages",
+    "displayName": "Promotions Page",
+    "description": "Thin page shell; promotion content comes from the Promotion collection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

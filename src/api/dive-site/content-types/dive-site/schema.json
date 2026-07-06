@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dive_sites",
+  "info": {
+    "singularName": "dive-site",
+    "pluralName": "dive-sites",
+    "displayName": "Dive Site",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "location": {
+      "type": "string"
+    },
+    "maxDepth": {
+      "type": "string"
+    },
+    "certificationLevel": {
+      "type": "enumeration",
+      "enum": ["Beginner", "Intermediate", "Advanced", "Technical"]
+    },
+    "type": {
+      "type": "json",
+      "description": "Array of strings, allowed values: Wreck, Reef, Deep, Drift, Wall, Night"
+    },
+    "marineLife": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "highlights": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "visibility": {
+      "type": "string"
+    },
+    "waterTemp": {
+      "type": "string"
+    },
+    "bestSeason": {
+      "type": "string"
+    },
+    "weatherConditions": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

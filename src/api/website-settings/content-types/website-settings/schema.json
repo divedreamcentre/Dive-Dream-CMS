@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "website_settings",
+  "info": {
+    "singularName": "website-settings",
+    "pluralName": "website-settings-entries",
+    "displayName": "Website Settings",
+    "description": "Site-wide chrome: nav, footer, contact info"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "siteName": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "contact": {
+      "type": "component",
+      "component": "shared.contact-info",
+      "repeatable": false
+    },
+    "navLinks": {
+      "type": "component",
+      "component": "shared.nav-link",
+      "repeatable": true
+    },
+    "secondaryLinks": {
+      "type": "component",
+      "component": "shared.nav-link",
+      "repeatable": true
+    },
+    "utilityBadges": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "footer": {
+      "type": "component",
+      "component": "website-settings.footer",
+      "repeatable": false
+    }
+  }
+}

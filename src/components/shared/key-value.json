@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_key_values",
+  "info": {
+    "displayName": "Key Value",
+    "description": "Generic label/text pair, e.g. BoatPage specs"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_about_page_missions",
+  "info": {
+    "displayName": "Mission",
+    "description": "About page mission section"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "points": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

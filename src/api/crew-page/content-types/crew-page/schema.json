@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "crew_pages",
+  "info": {
+    "singularName": "crew-page",
+    "pluralName": "crew-pages",
+    "displayName": "Crew Page",
+    "description": "Thin page shell; crew content comes from the TeamMember collection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dive_packages",
+  "info": {
+    "singularName": "dive-package",
+    "pluralName": "dive-packages",
+    "displayName": "Dive Package",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "price": {
+      "type": "component",
+      "component": "shared.pricing",
+      "repeatable": false
+    },
+    "divesCount": {
+      "type": "integer"
+    },
+    "equipmentIncluded": {
+      "type": "boolean",
+      "default": false
+    },
+    "nitroxOption": {
+      "type": "boolean",
+      "default": false
+    },
+    "privateGuideOption": {
+      "type": "boolean",
+      "default": false
+    },
+    "duration": {
+      "type": "string"
+    },
+    "isBestValue": {
+      "type": "boolean",
+      "default": false
+    },
+    "externalBookingUrl": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

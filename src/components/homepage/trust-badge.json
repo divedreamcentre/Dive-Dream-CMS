@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_homepage_trust_badges",
+  "info": {
+    "displayName": "Trust Badge",
+    "description": "Years/label/rating-count badge shown in the homepage hero"
+  },
+  "options": {},
+  "attributes": {
+    "years": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "ratingCount": {
+      "type": "string"
+    }
+  }
+}

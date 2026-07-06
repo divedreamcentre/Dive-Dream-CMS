@@ -1,0 +1,130 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course",
+    "description": "Canonical course entry — single source of truth for homepage teaser, listing page, and detail page copy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "overview": {
+      "type": "text"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category"
+    },
+    "agency": {
+      "type": "enumeration",
+      "enum": ["SDI", "TDI"]
+    },
+    "eyebrow": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "overviewSection": {
+      "type": "component",
+      "component": "course.overview-section",
+      "repeatable": false
+    },
+    "highlightCard": {
+      "type": "component",
+      "component": "shared.highlight-card",
+      "repeatable": false
+    },
+    "prerequisites": {
+      "type": "string"
+    },
+    "prerequisitesList": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "prerequisitesSection": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "duration": {
+      "type": "string"
+    },
+    "certificationAwarded": {
+      "type": "string"
+    },
+    "includedMaterials": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "price": {
+      "type": "component",
+      "component": "shared.pricing",
+      "repeatable": false
+    },
+    "schedule": {
+      "type": "string"
+    },
+    "learningPoints": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "learningPointsSection": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "requiredDives": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "optionalDives": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true
+    },
+    "courseStructureSection": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "courseStructureNote": {
+      "type": "text"
+    },
+    "ctaHeading": {
+      "type": "string"
+    },
+    "ctaDescription": {
+      "type": "text"
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "externalBookingUrl": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

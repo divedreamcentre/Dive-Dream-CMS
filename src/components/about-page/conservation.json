@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_about_page_conservations",
+  "info": {
+    "displayName": "Conservation",
+    "description": "About page conservation section"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "initiatives": {
+      "type": "component",
+      "component": "shared.highlight-card",
+      "repeatable": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

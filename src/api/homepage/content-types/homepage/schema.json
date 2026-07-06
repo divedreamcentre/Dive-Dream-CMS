@@ -1,0 +1,90 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "homepage.hero",
+      "repeatable": false
+    },
+    "heroSlides": {
+      "type": "component",
+      "component": "homepage.hero-slide",
+      "repeatable": true
+    },
+    "trustStats": {
+      "type": "component",
+      "component": "shared.icon-feature",
+      "repeatable": true
+    },
+    "promotionBanner": {
+      "type": "component",
+      "component": "homepage.promotion-banner",
+      "repeatable": false
+    },
+    "featuredDiveSites": {
+      "type": "component",
+      "component": "homepage.dive-sites-section",
+      "repeatable": false
+    },
+    "quickFeatures": {
+      "type": "component",
+      "component": "shared.icon-feature",
+      "repeatable": true
+    },
+    "packagesSection": {
+      "type": "component",
+      "component": "homepage.section-with-cta",
+      "repeatable": false
+    },
+    "coursesSection": {
+      "type": "component",
+      "component": "homepage.section-with-cta",
+      "repeatable": false
+    },
+    "promotionsSection": {
+      "type": "component",
+      "component": "homepage.section-with-cta",
+      "repeatable": false
+    },
+    "servicesSection": {
+      "type": "component",
+      "component": "homepage.section-with-cta",
+      "repeatable": false
+    },
+    "testimonialsSection": {
+      "type": "component",
+      "component": "homepage.section-with-cta",
+      "repeatable": false
+    },
+    "gallerySection": {
+      "type": "component",
+      "component": "homepage.section-with-cta",
+      "repeatable": false
+    },
+    "languagesSection": {
+      "type": "component",
+      "component": "homepage.languages-section",
+      "repeatable": false
+    },
+    "contactSection": {
+      "type": "component",
+      "component": "homepage.contact-section",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

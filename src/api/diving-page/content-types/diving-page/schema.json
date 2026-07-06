@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "diving_pages",
+  "info": {
+    "singularName": "diving-page",
+    "pluralName": "diving-pages",
+    "displayName": "Diving Page",
+    "description": "Thin page shell"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "shared.section-heading",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

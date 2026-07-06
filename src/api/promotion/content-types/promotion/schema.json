@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promotions",
+  "info": {
+    "singularName": "promotion",
+    "pluralName": "promotions",
+    "displayName": "Promotion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "discountLabel": {
+      "type": "string"
+    },
+    "discountType": {
+      "type": "enumeration",
+      "enum": ["percentage", "fixed"]
+    },
+    "discountValue": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "text"
+    },
+    "expiryDate": {
+      "type": "date"
+    },
+    "code": {
+      "type": "string"
+    },
+    "applicableCourses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course.course"
+    },
+    "applicablePackages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::dive-package.dive-package"
+    },
+    "applicableServices": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::service.service"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_homepage_language_items",
+  "info": {
+    "displayName": "Language Item",
+    "description": "Single language entry (lang code, flag, display label)"
+  },
+  "options": {},
+  "attributes": {
+    "lang": {
+      "type": "string",
+      "required": true
+    },
+    "flag": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}
