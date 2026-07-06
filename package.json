@@ -2,7 +2,7 @@
   "name": "dive-center-cms",
   "version": "0.1.0",
   "private": true,
-  "description": "A Strapi application",
+  "description": "Strapi CMS backend for the dive center website",
   "scripts": {
     "build": "strapi build",
     "console": "strapi console",
