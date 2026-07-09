@@ -29,14 +29,15 @@ function buildPopulate(strapi: Core.Strapi, uid: string, seen: Set<string>): tru
     }
 
     if (attr.type === 'component') {
-      populate[key] = { populate: buildPopulate(strapi, attr.component, nextSeen) };
+      const inner = buildPopulate(strapi, attr.component, nextSeen);
+      populate[key] = inner === true ? true : { populate: inner };
     } else if (attr.type === 'dynamiczone') {
       populate[key] = {
         on: Object.fromEntries(
-          attr.components.map((component: string) => [
-            component,
-            { populate: buildPopulate(strapi, component, nextSeen) },
-          ])
+          attr.components.map((component: string) => {
+            const inner = buildPopulate(strapi, component, nextSeen);
+            return [component, inner === true ? true : { populate: inner }];
+          })
         ),
       };
     } else if (attr.type === 'media' || attr.type === 'relation') {
