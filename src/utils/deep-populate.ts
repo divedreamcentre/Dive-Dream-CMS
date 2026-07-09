@@ -20,6 +20,12 @@ function buildPopulate(strapi: Core.Strapi, uid: string, seen: Set<string>): tru
   const populate: Record<string, unknown> = {};
 
   for (const [key, attr] of Object.entries(attributes)) {
+    // createdBy/updatedBy are admin-user relations Strapi adds to every schema;
+    // the public API rejects populating them ("Invalid key createdBy").
+    if (attr.type === 'relation' && (key === 'createdBy' || key === 'updatedBy' || attr.target === 'admin::user')) {
+      continue;
+    }
+
     if (attr.type === 'component') {
       populate[key] = { populate: buildPopulate(strapi, attr.component, nextSeen) };
     } else if (attr.type === 'dynamiczone') {
