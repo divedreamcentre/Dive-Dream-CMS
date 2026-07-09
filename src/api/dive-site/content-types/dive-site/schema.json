@@ -37,8 +37,10 @@
       "enum": ["Beginner", "Intermediate", "Advanced", "Technical"]
     },
     "type": {
-      "type": "json",
-      "description": "Array of strings, allowed values: Wreck, Reef, Deep, Drift, Wall, Night"
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true,
+      "description": "Allowed values: Wreck, Reef, Deep, Drift, Wall, Night"
     },
     "marineLife": {
       "type": "component",

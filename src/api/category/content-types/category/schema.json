@@ -21,9 +21,10 @@
       "required": true
     },
     "appliesTo": {
-      "type": "json",
-      "required": true,
-      "description": "Array of strings, allowed values: course, service, blog, faq, gallery"
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true,
+      "description": "Allowed values: course, service, blog, faq, gallery"
     }
   }
 }
