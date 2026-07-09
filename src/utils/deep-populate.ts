@@ -18,11 +18,13 @@ function buildPopulate(strapi: Core.Strapi, uid: string, seen: Set<string>): tru
   if (!attributes) return true;
 
   const populate: Record<string, unknown> = {};
+  // Strapi auto-adds these relations to every schema (createdBy/updatedBy point at
+  // admin::user, localizations is added even without the i18n plugin enabled); the
+  // public API rejects populating any of them ("Invalid key <name>").
+  const reservedRelations = new Set(['createdBy', 'updatedBy', 'localizations']);
 
   for (const [key, attr] of Object.entries(attributes)) {
-    // createdBy/updatedBy are admin-user relations Strapi adds to every schema;
-    // the public API rejects populating them ("Invalid key createdBy").
-    if (attr.type === 'relation' && (key === 'createdBy' || key === 'updatedBy' || attr.target === 'admin::user')) {
+    if (attr.type === 'relation' && (reservedRelations.has(key) || attr.configurable === false || attr.target === 'admin::user')) {
       continue;
     }
 
