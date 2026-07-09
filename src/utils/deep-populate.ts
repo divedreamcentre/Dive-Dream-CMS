@@ -44,7 +44,11 @@ function buildPopulate(strapi: Core.Strapi, uid: string, seen: Set<string>): tru
     }
   }
 
-  return populate;
+  // A component with no media/relation/component fields of its own (e.g.
+  // shared.section-heading, shared.cta-button) produces an empty populate object here.
+  // Strapi silently drops the entire branch — including parent fields — when it
+  // receives `{ populate: {} }`, so fall back to `true` for these leaf components.
+  return Object.keys(populate).length > 0 ? populate : true;
 }
 
 export function deepPopulate(strapi: Core.Strapi, uid: string) {
