@@ -12,7 +12,7 @@
     },
     "currency": {
       "type": "enumeration",
-      "enum": ["USD", "EUR", "GBP"],
+      "enum": ["USD", "EUR", "GBP", "MUR"],
       "default": "USD"
     },
     "unitLabel": {
