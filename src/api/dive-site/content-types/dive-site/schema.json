@@ -24,7 +24,7 @@
       "type": "string"
     },
     "description": {
-      "type": "blocks"
+      "type": "text"
     },
     "location": {
       "type": "string"

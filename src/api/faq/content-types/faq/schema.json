@@ -16,7 +16,7 @@
       "required": true
     },
     "answer": {
-      "type": "blocks"
+      "type": "text"
     },
     "category": {
       "type": "relation",

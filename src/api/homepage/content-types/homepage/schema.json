@@ -21,6 +21,11 @@
       "component": "homepage.hero-slide",
       "repeatable": true
     },
+    "heroBackgrounds": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
     "trustStats": {
       "type": "component",
       "component": "shared.icon-feature",

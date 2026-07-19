@@ -42,7 +42,7 @@
       "repeatable": true
     },
     "biography": {
-      "type": "blocks"
+      "type": "text"
     },
     "image": {
       "type": "media",

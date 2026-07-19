@@ -20,7 +20,7 @@
       "type": "string"
     },
     "boatDescription": {
-      "type": "blocks"
+      "type": "text"
     },
     "boatImage": {
       "type": "media",
