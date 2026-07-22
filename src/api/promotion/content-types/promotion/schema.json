@@ -39,6 +39,15 @@
     "code": {
       "type": "string"
     },
+    "ctaHref": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true,
+      "description": "Eligibility conditions/requirements for this promotion"
+    },
     "applicableCourses": {
       "type": "relation",
       "relation": "manyToMany",
