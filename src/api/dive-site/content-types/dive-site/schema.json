@@ -52,6 +52,12 @@
       "component": "shared.list-item",
       "repeatable": true
     },
+    "diveSites": {
+      "type": "component",
+      "component": "shared.list-item",
+      "repeatable": true,
+      "description": "Named individual dive sites visited as part of this safari"
+    },
     "visibility": {
       "type": "string"
     },
